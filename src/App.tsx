@@ -1,9 +1,10 @@
 import { ChakraProvider } from "@chakra-ui/react";
+import Colors from "./components/Colors/Colors";
 
 const App = () => {
   return (
     <ChakraProvider>
-      app
+      <Colors/>
     </ChakraProvider>
   );
 }
