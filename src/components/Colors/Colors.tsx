@@ -1,5 +1,5 @@
-import { Box, Button, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import { ColorContextInterface, ColorContextWrapper } from "./ColorContextWrapper";
 
 const Colors = () => {
@@ -13,7 +13,7 @@ const Colors = () => {
 
     useEffect(() => {
         if (currentColor) {
-          setColors(prevColors => [...prevColors, currentColor]);
+          setColors(colors => [...colors, currentColor]);
         }
     }, [currentColor]);
 
